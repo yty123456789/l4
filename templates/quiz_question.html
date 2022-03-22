@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>猿力家族 X 四大名著</title>
+    <link rel="stylesheet" href="../static/css/quiz_question.css">
+</head>
+
+<body>
+
+    <a class="home" href='/welcome'>首页</a>
+    <form action="/quiz_result" method="post">
+        <img class="bg_left" src="../static/images/bg_left_all.png" alt="">
+        <img class="bg_right" src="../static/images/bg_right_all.png" alt="">
+        <h3>正在匹配 【{{t_nickname}}】 对应的人物</h3>
+        <div class="question question1">
+            <p>1、“四大名著”中有很多精彩片段，假如你是导演，你会选择下列哪个片段拍摄？</p>
+            <div class="answer1">
+                <label for="one1" class="choices checked">
+                    <span>A</span>
+                    <span>过五关斩六将</span>
+                </label>
+                <label for="one2" class="choices">
+                    <span>B</span>
+                    <span>三打白骨精</span>
+                </label>
+                <label for="one3" class="choices">
+                    <span>C</span>
+                    <span>黛玉葬花</span>
+                </label>
+                <label for="one4" class="choices">
+                    <span>D</span>
+                    <span>武松打虎</span>
+                </label>
+                <input type="radio" value="A" name="answer1" id="one1" checked>
+                <input type="radio" value="B" name="answer1" id="one2">
+                <input type="radio" value="C" name="answer1" id="one3">
+                <input type="radio" value="D" name="answer1" id="one4">
+            </div>
+        </div>
+
+        <div class="question question2">
+            <p>2、你正在熬夜写剧本，脑袋一阵晕眩，耳边响起了一首熟悉的歌，你觉得可能是？</p>
+            <div class="answer2">
+                <label for="two1" class="choices checked">
+                    <span>A</span>
+                    <span>滚滚长江东逝水，浪花淘尽英雄</span>
+                </label>
+                <label for="two2" class="choices">
+                    <span>B</span>
+                    <span>你挑着担，我牵着马</span>
+                </label>
+                <label for="two3" class="choices">
+                    <span>C</span>
+                    <span>一个是水中月， 一个是镜中花</span>
+                </label>
+                <label for="two4" class="choices">
+                    <span>D</span>
+                    <span>大河向东流哇，天上的星星参北斗哇</span>
+                </label>
+                <input type="radio" value="A" name="answer2" id="two1" checked>
+                <input type="radio" value="B" name="answer2" id="two2">
+                <input type="radio" value="C" name="answer2" id="two3">
+                <input type="radio" value="D" name="answer2" id="two4">
+            </div>
+        </div>
+
+        <div class="question question3">
+            <p>3、往森林深处走去，你有些忐忑，又有些害怕，想找个帮手，你会首选？</p>
+            <div class="answer3">
+                <label for="three1" class="choices checked">
+                    <span>A</span>
+                    <span>关羽</span>
+                </label>
+                <label for="three2" class="choices">
+                    <span>B</span>
+                    <span>孙悟空</span>
+                </label>
+                <label for="three3" class="choices">
+                    <span>C</span>
+                    <span>王熙凤</span>
+                </label>
+                <label for="three4" class="choices">
+                    <span>D</span>
+                    <span>武松</span>
+                </label>
+                <input type="radio" value="A" name="answer3" id="three1" checked>
+                <input type="radio" value="B" name="answer3" id="three2">
+                <input type="radio" value="C" name="answer3" id="three3">
+                <input type="radio" value="D" name="answer3" id="three4">
+            </div>
+        </div>
+
+        <div class="question question4">
+            <p>4、当你骑着骏马，一脸疲惫，终于走了出森林，这时迎面冲出一人，手里握着一样东西，你觉得最可能是？</p>
+            <div class="answer4">
+                <label for="four1" class="choices checked">
+                    <span>A</span>
+                    <span>青龙偃月刀</span>
+                </label>
+                <label for="four2" class="choices">
+                    <span>B</span>
+                    <span>如意金箍棒</span>
+                </label>
+                <label for="four3" class="choices">
+                    <span>C</span>
+                    <span>花锄花篮</span>
+                </label>
+                <label for="four4" class="choices">
+                    <span>D</span>
+                    <span>禅杖戒刀</span>
+                </label>
+                <input type="radio" value="A" name="answer4" id="four1" checked>
+                <input type="radio" value="B" name="answer4" id="four2">
+                <input type="radio" value="C" name="answer4" id="four3">
+                <input type="radio" value="D" name="answer4" id="four4">
+            </div>
+        </div>
+
+        <div class="question question5">
+            <p>5、冲出来的这个人，对你说了一句话，你还没听清，他就走了，你猜测这句话是？</p>
+            <div class="answer5">
+                <label for="five1" class="choices checked">
+                    <span>A</span>
+                    <span>既生瑜，何生亮！</span>
+                </label>
+                <label for="five2" class="choices">
+                    <span>B</span>
+                    <span>大师兄，师父被妖怪抓走啦！</span>
+                </label>
+                <label for="five3" class="choices">
+                    <span>C</span>
+                    <span>这个妹妹我曾见过的！</span>
+                </label>
+                <label for="five4" class="choices">
+                    <span>D</span>
+                    <span>公明哥哥！</span>
+                </label>
+                <input type="radio" value="A" name="answer5" id="five1" checked>
+                <input type="radio" value="B" name="answer5" id="five2">
+                <input type="radio" value="C" name="answer5" id="five3">
+                <input type="radio" value="D" name="answer5" id="five4">
+            </div>
+
+        </div>
+        <input type="hidden" value="{{t_nickname}}" name="nickname">
+        <input type="submit" value='开始匹配'>
+    </form>
+</body>
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/quiz_question.js"></script>
+
+</html>

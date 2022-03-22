@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猿力家族 X 四大名著</title>
+    <link rel="stylesheet" href="../static/css/quiz.css">
+</head>
+<body>
+    <a class="home" href="/welcome">首页</a>
+    <!-- 【提示3】给<a>标签添加跳转的地址为/dress_result -->
+    <a class="daguanyuan" href="/dress_result">装扮大观园</a>
+    <form action="/quiz_question" method="post">
+        <h3>敢问大侠尊姓大名</h3>
+        <input type="text" name="nickname" required maxlength="6"><br>
+        <input type="submit" value="确定">
+    </form>
+</body>
+</html>

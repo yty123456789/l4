@@ -1,0 +1,389 @@
+/*以下预留*/
+
+/* 清除所有标签默认外边距，设置为0（外边距：元素外部空出的区域） */
+* {
+    margin: 0;
+
+}
+
+/* 设置HTML最小高度占满整屏幕 */
+html,
+body {
+    min-width: 1920px;
+}
+
+/* 设置背景颜色 */
+body {
+    background: url('../images/bg_quiz_question.png') no-repeat center;
+    background-size: cover;
+}
+
+.background {
+    /* 上下外边距为0，左右外边距居中 */
+    margin: 0 auto;
+    /* 背景图片 */
+    background-image: url('../images/quiz_question.jpg');
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景宽度 */
+    width: 1220px;
+}
+
+/* 1号自定义字体 */
+@font-face {
+    /* 自定义字体名称 */
+    font-family: one;
+    /* 导入自定义字体文件 */
+    src: url('../font/沐瑶软笔手写体.ttf');
+}
+
+/* 2号自定义字体 */
+@font-face {
+    /* 自定义字体名称 */
+    font-family: two;
+    /* 导入自定义字体文件 */
+    src: url('../font/杨任东竹石体.ttf');
+}
+
+@font-face {
+    font-family: Fangzhenglantingyuan;
+    src: url('../font/方正兰亭圆简体.ttf');
+}
+
+@font-face {
+    font-family: Fangzheng;
+    src: url('../font/方正粗圆简体.ttf');
+}
+
+.home {
+    display: block;
+    text-decoration: none;
+    font-family: Fangzhenglantingyuan;
+    width: 130px;
+    height: 55px;
+    line-height: 54px;
+    background: url('../images/btn_goIndex.png') no-repeat center;
+    background-size: contain;
+    font-size: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 65px;
+    position: absolute;
+    left: 72px;
+    top: 25px;
+    letter-spacing: 5px;
+}
+
+
+h3 {
+    /* 文本颜色： 十六进制数的RGB（红、绿、蓝）颜色 */
+    color: #4895ef;
+    /* 字体粗细 */
+    font-weight: 100;
+    /* 使用1号自定义字体 */
+    font-family: Fangzhenglantingyuan;
+    font-size: 30px;
+    margin-left: 133px;
+}
+
+form {
+    width: 1643px;
+    /* height: 1800px; */
+    display: block;
+    /* 设置上下左右外边距 */
+    margin: 0 auto;
+    /* 使用2号自定义字体 */
+    font-family: two;
+
+    background: url('../images/bg_quiz_questionContain.png') no-repeat center;
+    background-size: 100% 100%;
+    margin-top: 120px;
+    position: relative;
+}
+
+.bg_left {
+    width: 223px;
+    position: absolute;
+    left: -138px;
+    top: 695px;
+}
+
+.bg_right {
+    width: 218px;
+    position: absolute;
+    right: -139px;
+}
+
+form::before {
+    content: ' ';
+    width: 653px;
+    height: 177px;
+    display: block;
+    background: url('../images/title.png') no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 85px;
+}
+
+form::after {
+    content: ' ';
+    width: 700px;
+    height: 645px;
+    display: block;
+    background: url('../images/littleYuan.png') no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    left: 1082px;
+    bottom: 0;
+}
+
+.question {
+    /* 内边距 */
+    padding-top: 36px;
+    /* 字体大小 */
+    font-size: 20px;
+    /* 字符串太长，可换行 */
+    overflow-wrap: break-word;
+    /* 文本颜色： 十六进制数的RGB（红、绿、蓝）颜色 */
+    color: #000000;
+
+    margin: 50px auto;
+    width: 1383px;
+    font-family: Fangzhenglantingyuan;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+p {
+    /* 下内边距（元素内容到下边框之间的距离） */
+    padding-bottom: 20px;
+    /* 字体大小 */
+    font-size: 35px;
+    /* 文本颜色： 十六进制数的RGB（红、绿、蓝）颜色 */
+    color: #000000;
+    font-weight: 600;
+}
+
+.answer1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.question input {
+    display: none;
+
+}
+
+.choices {
+    width: 354px;
+    height: 58px;
+    line-height: 58px;
+    display: block;
+    border: 2px solid #DEDEDE;
+    border-radius: 4485px;
+    font-size: 25px;
+    margin-left: 104px;
+    margin-top: 15px;
+    font-family: Fangzhenglantingyuan;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.choices span:nth-child(1) {
+    display: inline-block;
+    width: 83px;
+    height: 35px;
+    line-height: 39px;
+    text-align: center;
+    border-right: 2px solid #DEDEDE;
+}
+
+.choices span:nth-child(2) {
+    margin-left: 35px;
+}
+
+.answer2 .choices {
+    width: 712px;
+}
+
+.answer3 {
+    display: flex;
+}
+
+.answer3 .choices {
+    width: 188px;
+}
+
+.answer3 .choices span:nth-child(1) {
+    width: 70px;
+}
+
+.answer3 .choices span:nth-child(2) {
+    margin-left: 12px;
+}
+
+.answer4 .choices {
+    width: 455px;
+}
+
+.answer5 .choices {
+    width: 712px;
+}
+.answer6 {
+    display: flex;
+}
+.answer6 .choices{
+    width: 246px;
+}
+/* input[type="radio"] {
+    margin-left: 60px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+} */
+
+input[type="submit"] {
+    width: 500px;
+    height: 75px;
+    border-radius: 40px;
+    font-size: 30px;
+    color: #FFF;
+    background: #6C8CF7;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.7;
+    /* 滤镜 */
+    filter: alpha(opacity=70);
+}
+
+input[type="submit"]:hover {
+    /* 透明度 */
+    opacity: 1;
+    /* 滤镜 */
+    filter: alpha(opacity=100);
+    cursor: pointer;
+}
+
+.checked {
+    background: #6C8CF7;
+    border: 2px solid #9EC0FF;
+    color:#fff;
+}
+
+.unchecked {
+    background: none;
+}
+
+/* .question:nth-child(2) input {
+    vertical-align: bottom;
+    margin-bottom: 12px;
+}
+
+.question:nth-child(2) input:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.question:nth-child(2) input:nth-of-type(3) {
+    margin-top: 30px;
+}
+
+.question:nth-child(2) input:nth-of-type(4) {
+    margin-top: 30px;
+}
+
+.question:nth-child(5) input {
+    vertical-align: bottom;
+    margin-bottom: 12px;
+}
+
+.question:nth-child(5) input:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.question:nth-child(5) input:nth-of-type(3) {
+    margin-top: 30px;
+}
+
+.question:nth-child(5) input:nth-of-type(4) {
+    margin-top: 30px;
+} */
+
+
+/*适配*/
+@media screen and (min-width:1500px) and (max-width:1920px) {
+    .choices {
+        margin-left: 104px;
+        /* margin-left: 98px; */
+    }
+    form::after {
+        width: 700px;
+        height: 645px;
+        left: 1082px;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:1500px) {
+
+    html,
+    body {
+        min-width: 1440px;
+        height: auto;
+    }
+	h3{margin-left: 65px}
+    form {
+        width: 1260px;
+        height: 2447px;
+        position: relative;
+    }
+
+    .bg_left {
+        width: 154px;
+        position: absolute;
+        left: -91px;
+        top: 600px;
+    }
+
+    .bg_right {
+        width: 153px;
+        position: absolute;
+        right: -89px;
+    }
+
+    form::before {
+        width: 490px;
+        height: 133px;
+        bottom: 63px;
+    }
+
+    form::after {
+        width: 391px;
+        height: 362px;
+        left: 980px;
+        bottom: 87px;
+    }
+	.choices{
+		margin-left:53px;
+	}
+    p {
+        font-size: 29px;
+    }
+
+    .question {
+        padding-top: 30px;
+        overflow-wrap: break-word;
+        color: #000000;
+        margin: 50px auto;
+        margin-top: 0;
+        width: 90%;
+        font-family: Fangzhenglantingyuan;
+        font-size: 30px;
+        font-weight: 400;
+    }
+ 
+    input[type="submit"] {
+        margin-top: 100px;
+    }
+}

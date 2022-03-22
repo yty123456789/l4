@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Fangzhenglantingyuan;
+    src: url('../font/方正兰亭圆简体.ttf');
+}
+@font-face {
+    font-family: zhanku;
+    src: url('../font/zhanku.ttf');
+}
+/* 设置HTML最小高度占满整屏幕 */
+html, body{
+    width:100%;
+    height:100%;
+    min-width: 1220px;
+    min-height: 790px;
+}
+body{
+    background-image: url('../images/bg_quiz.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    width:604px;
+    height:640px;
+    position: relative;
+    margin-left: 156px;
+    background: url('../images/bg_form.png') no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 254px;
+    top: 77px;
+}
+input{
+    border-radius: 35px;
+    outline: none;
+    font-size: 24px;
+}
+input[type='text']{
+    width:502px;
+    height:65px;
+    margin-top: 34px;
+    border: none;
+    background: #F7F9FC;
+    text-indent: 15px;
+}
+
+input[type="submit"]{
+    width:502px;
+    height:70px;
+    margin-top: 50px;
+    color: #FFF;
+    background: #6C8CF7;
+    border: none;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+input[type="submit"]:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    cursor: pointer;
+}
+
+.home {
+    display: block;
+    text-decoration: none;
+    font-family: Fangzhenglantingyuan;
+    width: 130px;
+    height: 55px;
+    line-height: 54px;
+    background: url('../images/btn_goIndex.png') no-repeat center;
+    background-size: contain;
+    font-size: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 65px;
+    position: absolute;
+    left: 72px;
+    top: 25px;
+    letter-spacing: 5px;
+}
+.daguanyuan {
+    display: block;
+    text-decoration: none;
+    font-family: Fangzhenglantingyuan;
+    width: 215px;
+    height: 60px;
+    line-height: 60px;
+    background: url('../images/btn_daguanyuan.png') no-repeat center;
+    background-size: contain;
+    font-size: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 27px;
+    position: absolute;
+    top: 25px;
+    right: 54px;
+    letter-spacing: 3px;
+}
+
+h3{
+    font-family: zhanku;
+    font-size: 40px;
+    color: #568AEC;
+    letter-spacing: 1.6px;
+    font-weight: 400;
+}
+
+@media screen and (min-height:1080px) {
+    form{
+        top: 20vh;
+    }
+}
+@media screen and (max-width:1440px) {
+    html,body{
+        min-width: 1440px;
+        min-height: 800px;
+    }
+    form{
+        width:454px;
+        height:483px;
+        padding-top: 190px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    input[type='text']{
+        width:411px;
+        height:56px;
+    }
+    
+    input[type="submit"]{
+        width:411px;
+        height:60px;
+    }
+
+}
+@media screen and (max-width:1200px) {
+    html,body{
+        min-width: 1200px;
+        min-height: 720px;
+    }
+}

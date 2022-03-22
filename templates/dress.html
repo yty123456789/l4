@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>装扮大观园</title>
+    <link rel="stylesheet" href="../static/css/dress.css">
+</head>
+
+<body>
+    <a class="home" href='/welcome'>首页</a>
+    <div class="container">
+        <img class="bg_img" src="../static/images/bg_dress.png" alt="">
+        <div class="background1">
+            <img class="bg_left" src="../static/images/bg_left_all.png" alt="">
+            <img class="bg_right" src="../static/images/bg_right_all.png" alt="">
+            <img class="bg_right2" src="../static/images/bg_right_all.png" alt="">
+            <div class="background3">
+                <!-- 【提示2】使用模板for循环遍历 t_dress -->
+                {% for i in t_dress %}
+                <div class="dress">
+                    <div class="dress_top">
+                        <h3 class="dress_title">{{ i['title'] }}</h3>
+                        <img class="dress_result" src="../static/images/{{ i['role'] }}">
+                        {% if i['stage']=="有" %}
+                        <img class="dress_stage" src="../static/images/stage.png">
+                        {% endif %}
+                    </div>
+                    <p class="nickname">{{ i['nickname'] }}</p>
+                    <p class="time">{{ i['time'] }}</p>
+                </div>
+                <!-- 【提示2】模板for循环结束语句 -->
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

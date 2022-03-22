@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>猿力家族 X 四大名著</title>
+    <link rel="stylesheet" href="../static/css/quiz_result.css">
+</head>
+
+<body>
+    <a class="home" href='/welcome'>首页</a>
+    <div class="container">
+        <div class="img_box">
+            <img class="character" src="../static/images/{{t_role}}.png">
+            <img class="img_shadow" src="../static/images/shadow.png" alt="">
+        </div>
+        
+        <div class="containerBox">
+            <div class="result">
+                <h3>【{{t_nickname}}】</h3>
+                <p>最匹配的四大名著人物是 "{{t_role}}"</p> 
+            </div>
+           
+            <form action="/dress_result" method="post">
+                <div class="top">
+                    <img src="../static/images/舞台效果.png">
+                    <span>舞台效果：</span>
+                    <label for="yes" class="choices checked">
+                        <span>有</span>
+                    </label>
+                    <label for="no" class="choices">
+                        <span>无</span>
+                    </label>
+                    <input type="radio" name="stage" value="有" id="yes" checked>
+                    <input type="radio" name="stage" value="无" id="no">
+                </div>
+                <div class="bottom">
+                    <img src="../static/images/选择称号.png">
+                    <span>选择称号：</span>
+                    <label for="one" class="choices checked">
+                        <span>武圣关公</span>
+                    </label>
+                    <label for="two" class="choices">
+                        <span> 齐天大圣 </span>
+                    </label>
+                    <label for="three" class="choices">
+                        <span> 绛珠仙子 </span>
+                    </label>
+                    <label for="four" class="choices">
+                        <span> 打虎英雄 </span>
+                    </label>
+
+                    <input id="one" type="radio" name="title" value="武圣关公"  checked>
+                    <input id="two" type="radio" name="title" value="齐天大圣" >
+                    <input id="three" type="radio" name="title" value="绛珠仙子" >
+                    <input id="four" type="radio" name="title" value="打虎英雄" >
+                </div>
+                <input class="submit" type="submit" value="查看装扮效果">
+                <input type="hidden" value={{t_nickname}} name="nickname">
+                <input type="hidden" value={{t_role}}.png name="role">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script src="../static/js/jquery-3.3.1.min.js"></script>
+<script src="../static/js/quiz_result.js"></script>
+
+</html>
